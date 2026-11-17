@@ -1,0 +1,60 @@
+:root { 
+    --primaryaccent: #13598B;
+    --lightaccent: #13598B80;
+    --brightaccent: #F9F235;
+    --gray: #D9D9D9;
+}
+
+body {
+    font-family: Inter;
+    margin: 0;
+    display: block;
+}
+
+#herocontainer {
+    position: relative;
+}
+
+#heroimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#mainheader {
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    background-color: var(--primaryaccent);
+    color: white;
+    padding: 10px 30px;
+    
+}
+
+#breadcrumbs {
+    background-color: var(--gray);
+    display: flex;
+    margin: 0;
+    padding-left: 5px;
+    gap: 2px;
+    font-size: 0.8rem;
+}
+
+.lightcrumbs {
+    color: gray;
+}
+
+#quote {
+    margin: 36px 50px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+
+#infobox {
+    background-color: var(--lightaccent);
+    margin: 20px 40px;
+}
+
+

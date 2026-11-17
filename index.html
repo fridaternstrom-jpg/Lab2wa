@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webbutveckling</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/526849ee76.js" crossorigin="anonymous" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,17 +20,28 @@
     </nav>
 </header>
 <main>
-    <picture>
+    <div id="herocontainer">
+    <picture> 
+        <source srcset="images/herosmall.webp" type="image/webp">
         <source srcset="images/herowide.webp" type="image/webp" media="(min-width: 800px)">
         <source srcset="images/herowide.jpg" media="(min-width: 800px)">
-        <source srcset="images/herosmall.webp" type="image/webp">
         <img id="heroimg" src="images/herosmall.jpg" alt="två personer framför en skärm med kod">
     </picture>
-    <h1 id="mainheader">Webbutveckling</h1>
-    <div id="breadcrumbs"><p class="lightcrumbs">Start > Utbildning > Sök program ></p><p id="darkcrumb">Webbutveckling</p></div>
+    <h1 id="mainheader">Webbutveckling</h1></div>
+    <div id="breadcrumbs"><p class="lightcrumbs">Start > Utbildning > Sök program > </p><p id="darkcrumb">Webbutveckling</p></div>
 <h2 id="quote">"Branchen bedöms växa med 20 procent närmsta åren och behovet av webbutvecklare är stort."</h2>
 <section id="infobox">
-    
+<div class="infoblock">
+<i class="fa-solid fa-book"></i><h2>Behörighet</h2><p>Grundläggande behörighet</p>
+</div>
+<div class="infoblock">
+<i class="fa-solid fa-users"></i><h2>Sammankomster</h2><p>Distans, utan sammankomster</p>
+</div>
+<div class="infoblock">
+<i class="fa-solid fa-graduation-cap"></i><h2>Examen</h2><p>Högskoleexamen</p></div>
+<div id="applyarea">
+    <a id="applyhere">Ansök till programmet</a>
+</div>
 </section>
 </main>
 <footer>
