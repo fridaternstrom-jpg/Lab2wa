@@ -55,6 +55,18 @@ body {
 #infobox {
     background-color: var(--lightaccent);
     margin: 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoblock {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.iconblock {
+    display: flex;
+    align-items: center; 
 }
 
 
