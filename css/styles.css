@@ -29,11 +29,11 @@ nav ul {
 }
 
 #logotyp {
-    width: 80%;
+    width: 70%;
     justify-self: center;
     align-self: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .link-area {
@@ -41,7 +41,7 @@ nav ul {
     align-items: center;
     background-color: var(--gray);
     border-radius: 15px;
-    padding: 0px 15px;
+    padding: 0px 10px;
     gap: 5px;
     align-self: start;
 }
@@ -57,7 +57,6 @@ nav ul {
 #search-area p {
     font-size: 1.2rem;
 }
-
 
 #herocontainer {
     position: relative;
@@ -241,6 +240,12 @@ picture {
     margin-top: 20px;
 }
 
+#quote-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 #Marie-bild {
     width: 100%;
 }
@@ -311,4 +316,118 @@ footer p {
     margin-top: 0;
 }
 
+@media (min-width: 460px) {
+    #infobox-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #infobox {
+        padding-right: 60px;
+    }
+
+    #exam-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #exam-infobox {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 600px) {
+
+    #logotyp {
+        width: 50%;
+    }
+
+    #infobox-container {
+        flex-direction: row-reverse;
+    }
+
+    #infobox {
+        margin: 60px 20px 0px;
+    }
+
+    #quote {
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    #webcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--primaryaccent);
+    }
+
+    #happy-compute {
+object-fit: cover;
+height: 550px;
+object-position: right;
+margin: 0;
+    }
+
+    #quote-container {
+      
+    }
+
+    #quote-container picture {
+        max-width: 500px;
+    }
+
+    #quote-div {
+        max-width: 400px;
+    }
+
+#after-edu-box {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+}
+
+@media (min-width: 800px) {
+
+nav {
+    align-self: end;
+    margin-bottom: 10px;
+}
+
+#logotyp {
+    width: 40%;
+}
+
+#search-area {
+    align-self: end;
+}
+
+#mainheader {
+    left: 300px;
+}
+
+#happy-compute {
+    height: 400px;
+}
+
+#container-wide {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#exam-infobox {
+    margin: 0;
+    border-radius: 0;
+    padding: 30px 50px 20px;
+}
+
+}
+
+@media (min-width: 1000px) {
+    
+}
 
