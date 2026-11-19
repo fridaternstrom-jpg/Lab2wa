@@ -11,6 +11,54 @@ body {
     display: block;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+nav {
+    justify-self: start;
+    align-self: center;
+    margin-left: 10px;
+    padding: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#logotyp {
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.link-area {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray);
+    border-radius: 15px;
+    padding: 0px 15px;
+    gap: 5px;
+    align-self: start;
+}
+
+#search-area {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    align-self: center;
+    margin-right: 15px;
+}
+
+#search-area p {
+    font-size: 1.2rem;
+}
+
+
 #herocontainer {
     position: relative;
 }
@@ -104,11 +152,12 @@ body {
 }
 
 .info-article {
-    margin: 60px 50px 30px;
+    margin: 30px 50px 30px;
 }
 
 .info-article h1 {
     margin-bottom: 0;
+    padding-top: 30px;
     padding-bottom: 0;
 }
 
@@ -116,8 +165,8 @@ body {
     margin-top: 5px;
 }
 
-.new-paragraph {
-    margin-top: 10px;
+.cursive-p {
+    font-style: italic;
 }
 
 #exam-infobox {
@@ -136,15 +185,19 @@ body {
 }
 
 .dark-article h2 {
-    padding: 20px 50px 0px;
+    padding: 30px 50px 0px;
     margin-bottom: 0;
     margin-top: 0;
 }
 
 .dark-article p {
     margin-top: 5px;
-    padding: 0px 50px 20px;
+    padding: 0px 50px 0px;
     font-weight: 300; 
+}
+
+#last-dark-p {
+    padding-bottom: 30px;
 }
 
 .info-article h2 {
@@ -213,6 +266,49 @@ picture {
     padding-top: 0;
     margin-top: 0;
     align-self: end;
+}
+
+#after-edu-box {
+    background-color: var(--brightaccent);
+    margin: 10px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px 10px;
+    border-radius: 10px;
+}
+
+#after-edu-box h2 {
+    margin-bottom: 10px;
+}
+
+#after-edu-box p {
+    margin-top: 0;
+}
+
+footer {
+    border-top: solid gray 0.5px;
+    background-color: white;
+   padding: 20px;
+}
+
+footer h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+#footer-divider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+footer a {
+    color: black;
+}
+
+footer p {
+    margin-top: 0;
 }
 
 
