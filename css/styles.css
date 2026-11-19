@@ -275,7 +275,7 @@ picture {
 
 #after-edu-box {
     background-color: var(--brightaccent);
-    margin: 10px 40px 60px;
+    margin: 60px 40px 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -373,16 +373,12 @@ object-position: right;
 margin: 0;
     }
 
-    #quote-container {
-      
-    }
-
     #quote-container picture {
-        max-width: 500px;
+        max-width: 450px;
     }
 
     #quote-div {
-        max-width: 400px;
+        max-width: 350px;
     }
 
 #after-edu-box {
@@ -408,6 +404,7 @@ nav {
 
 #mainheader {
     left: 300px;
+    padding: 20px 50px;
 }
 
 #happy-compute {
@@ -428,6 +425,60 @@ nav {
 }
 
 @media (min-width: 1000px) {
-    
+    #quote {
+        padding: 60px;
+    }
+
+    #infobox {
+        padding-right: 140px;
+        margin-left: 15%;
+    }
+
+#quote { 
+    margin-right: 5%;
+}
+
+.info-article h1 {
+    font-size: 2.4rem;
+}
+
+.info-article p {
+    font-size: 1.3rem;
+}
+
+    .info-article {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #container-wide {
+        gap: 80px;
+    }
+#infobox h2 {
+    padding-right: 30px;
+}
+    #exam-container {
+        margin-right: 15%;
+    }
+
+    #exam-infobox {
+        border-radius: 10px;
+    }
+
+    #first-dark {
+        margin-left: 15%;
+        border-radius: 10px;
+    }
+
+#happy-compute {
+    height: 380px;
+}
+
+#after-edu-box {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
 }
 
