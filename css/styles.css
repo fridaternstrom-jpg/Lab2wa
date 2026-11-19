@@ -116,6 +116,10 @@ body {
     margin-top: 5px;
 }
 
+.new-paragraph {
+    margin-top: 10px;
+}
+
 #exam-infobox {
     background-color: var(--brightaccent);
     margin: 0px 60px 50px;
