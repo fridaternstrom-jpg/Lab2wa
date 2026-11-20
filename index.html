@@ -14,213 +14,231 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 </head>
-
+<body>
 <header>
+    <!-- Navigation börjar här, men är endast för syns skull -->
     <nav>
         <ul>
-<li class="link-area"><i class="fa-solid fa-bars fa-1xl"></i><p>Meny</p></li>
-</ul>
+            <li class="link-area"><i class="fa-solid fa-bars fa-1xl"></i>
+                <p>Meny</p>
+            </li>
+        </ul>
     </nav>
     <img id="logotyp" src="images/mittuniversitetet_logo.png" alt="Till startsidan">
-    <div id="search-area"><i class="fa-solid fa-magnifying-glass fa-xl"></i><p>Sök</p></div>
+    <div id="search-area"><i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        <p>Sök</p>
+    </div>
 </header>
+
 <main>
+    <!-- Behållare för bild och dess rubrik, för att få rubriken ovanpå bilden -->
     <div id="herocontainer">
-    <picture> 
-        <source srcset="images/hero-wide-1000.webp 1000w" 
-        sizes="100vw"
-        type="image/webp" 
-        media="(min-width: 800px)">
-        
-        <source srcset="images/hero-wide-1000.jpg 1000w"
-        media="(min-width: 800px)"
-        sizes="100vw">
+        <picture>
+            <source srcset="images/hero-wide-1000.webp 1000w" sizes="100vw" type="image/webp"
+                media="(min-width: 800px)">
 
-        <source srcset="images/hero-small-600.webp 600w,
-        images/hero-small-800.webp 800w"
-        sizes="100vw"
-         type="image/webp">
+            <source srcset="images/hero-wide-1000.jpg 1000w" media="(min-width: 800px)" sizes="100vw">
 
-        <img id="heroimg" 
-        src="images/hero-small-600.jpg" 
-        srcset="images/hero-small-600.jpg 600w,
-        images/hero-small-800.jpg 800w"
-        sizes="100vw"
-        width="600"
-        height="309"
-        alt="två personer framför en skärm med kod">
-    </picture>
+            <source srcset="images/hero-small-600.webp 600w,
+        images/hero-small-800.webp 800w" sizes="100vw" type="image/webp">
 
-    <h1 id="mainheader">Webbutveckling</h1></div>
-    <div id="breadcrumbs"><p class="lightcrumbs">Start > Utbildning > Sök program > </p><p id="darkcrumb">Webbutveckling</p></div>
-<div id="infobox-container">
-    <h2 id="quote">"Branchen bedöms växa med 20 procent närmsta åren och behovet av webbutvecklare är stort."</h2>
+            <img id="heroimg" src="images/hero-small-600.jpg" srcset="images/hero-small-600.jpg 600w,
+        images/hero-small-800.jpg 800w" sizes="100vw" width="600" height="309"
+                alt="två personer framför en skärm med kod">
+        </picture>
+
+        <h2 id="infoheader">Webbutveckling</h2>
+    </div>
+
+    <!-- Brödsmulor endast för syns skull -->
+    <div id="breadcrumbs">
+        <p class="lightcrumbs">Start > Utbildning > Sök program > </p>
+        <p id="darkcrumb">Webbutveckling</p>
+    </div>
+
+    <!-- Behållare för citat och infofält -->
+    <div id="infobox-container">
+        <h2 id="quote">"Branchen bedöms växa med 20 procent närmsta åren och behovet av webbutvecklare är stort."</h2>
 
 
-<section id="infobox">
+        <section id="infobox">
+            <div class="infoblock" id="top-infoblock">
+                <!-- Indelningar för att få ikonerna att ligga rätt -->
+                <div class="iconblock">
+                    <i class="fa-solid fa-book fa-xl info-icon"></i>
+                    <h2>Behörighet</h2>
+                </div>
 
-<div class="infoblock" id="top-infoblock">
-<div class="iconblock">
-    <i class="fa-solid fa-book fa-xl info-icon"></i>
-    <h2>Behörighet</h2></div>
-<p>Grundläggande behörighet</p>
-</div>
+                <p>Grundläggande behörighet</p>
+            </div>
 
-<div class="infoblock">
-    <div class="iconblock">
-<i class="fa-solid fa-users fa-xl info-icon"></i><h2>Sammankomster</h2></div>
-<p>Distans, utan sammankomster</p>
-</div>
+            <div class="infoblock">
+                <div class="iconblock">
+                    <i class="fa-solid fa-users fa-xl info-icon"></i>
+                    <h2>Sammankomster</h2>
+                </div>
+                <p>Distans, utan sammankomster</p>
+            </div>
 
-<div class="infoblock">
-    <div class="iconblock">
-<i class="fa-solid fa-graduation-cap fa-xl info-icon"></i><h2>Examen</h2></div>
-<p>Högskoleexamen</p>
-</div>
+            <div class="infoblock">
+                <div class="iconblock">
+                    <i class="fa-solid fa-graduation-cap fa-xl info-icon"></i>
+                    <h2>Examen</h2>
+                </div>
+                <p>Högskoleexamen</p>
+            </div>
 
-<div id="applyarea">
-    <a id="applyhere">Ansök till programmet</a>
-</div>
-</section></div>
-<article class="info-article">
-    <h1>Webbutveckling, 120 hp</h1>
-    <p>Webbutveckling är en het bransch som fortsätter att växa. Med Mittuniversitetets utbildning <strong>Webbutveckling</strong> i bagaget har du på bara två år lagt grunden för en framgångsrik framtid.
-</p>
-<p>
-Utbildningen riktar sig till dig som har ett intresse för <strong>datorer</strong> och <strong>teknik</strong>. Efter studierna kan du arbeta med utveckling, administration och drift av moderna webbplatser. Utbildningen fokuserar på teoretiska och praktiska färdigheter och har stor tyngdpunkt på webbutveckling med moderna hjälpmedel och språk. 
-<p class="cursive-p">
-På kort tid förbereds du för att arbeta med webbutveckling i ditt yrke. </p>
-</p>
-<p>
-Utbildningen ges på distans.</p>
-</article>
-<div id="container-wide">
-<div id="exam-container">
-<div id="exam-infobox">
-    <i class="fa-solid fa-graduation-cap fa-2xl"></i>
-    <p><strong>Examensbenämningen</strong> är Högskoleexamen med inriktning mot datateknik som översätts till Higher Education Diploma with specialization in Computer Engineering.</p>
-</div></div>
+            <div id="applyarea">
+                <a id="applyhere">Ansök till programmet</a>
+            </div>
+        </section>
+    </div>
 
-<article class="dark-article" id="first-dark">
-    <h2>Efterfrågan</h2>
-    <p>E-handeln i Sverige växer som aldrig förr och framtidstron är stark bland både e-handelsföretagen och dess konsumenter. Framgångsrika webbplatser 
-        skapas genom att användaren sätts i centrum i utvecklingsprocessen. 
-    </p><p id="last-dark-p">
-        Det är viktigt att ta hänsyn till hur gränssnittet mellan användaren av en e-tjänst och tekniken som får den att fungera ska utformas. </p>
-</p></article></div>
-<article class="info-article">
-    <h2>Om utbildningen</h2>
-    <p>Utbildningen är skräddarsydd för att ge dig alla <strong>verktyg</strong> som krävs för att arbeta med webbutveckling. Du kommer att lära dig teknikerna bakom de nya trenderna med att skapa webbplatser som har <strong>användargenererat</strong> innehåll, exempelvis Wikipedia.
-    </p>
-<p>
-Du får på kort tid kunskaper och lär dig arbeta med <strong>moderna ramverk</strong> och plattformar för utveckling och användande samt programmeringsspråken:</p>
-</p>
+    <!-- Här börjar själva texten -->
+    <article class="info-article">
+        <h1>Webbutveckling, 120 hp</h1>
+        <p>Webbutveckling är en het bransch som fortsätter att växa. Med Mittuniversitetets utbildning
+            <strong>Webbutveckling</strong> i bagaget har du på bara två år lagt grunden för en framgångsrik framtid.
+        </p>
+        <p>Utbildningen riktar sig till dig som har ett intresse för <strong>datorer</strong> och
+            <strong>teknik</strong>. Efter studierna kan du arbeta med utveckling, administration och drift av moderna
+            webbplatser. Utbildningen fokuserar på teoretiska och praktiska färdigheter och har stor tyngdpunkt på
+            webbutveckling med moderna hjälpmedel och språk.</p>
+        <p class="cursive-p"> På kort tid förbereds du för att arbeta med webbutveckling i ditt yrke. </p>
+        <p>Utbildningen ges på distans.</p>
+    </article>
+    <div id="container-wide">
+        <div id="exam-container">
+            <div id="exam-infobox">
+                <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+                <p><strong>Examensbenämningen</strong> är Högskoleexamen med inriktning mot datateknik som översätts
+                    till Higher Education Diploma with specialization in Computer Engineering.</p>
+            </div>
+        </div>
 
-<div id="programming-list">
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-    <li>JavaScript</li>
-<li>Node</li></ul>
+        <article class="dark-article" id="first-dark">
+            <h2>Efterfrågan</h2>
+            <p>E-handeln i Sverige växer som aldrig förr och framtidstron är stark bland både e-handelsföretagen och
+                dess konsumenter. Framgångsrika webbplatser
+                skapas genom att användaren sätts i centrum i utvecklingsprocessen. </p>
+           
+            <p class="last-dark-p">Det är viktigt att ta hänsyn till hur gränssnittet mellan användaren av en e-tjänst och tekniken som får
+                den att fungera ska utformas. </p>
+        </article>
+    </div>
+    <article class="info-article">
+        <h2>Om utbildningen</h2>
+        <p>Utbildningen är skräddarsydd för att ge dig alla <strong>verktyg</strong> som krävs för att arbeta med
+            webbutveckling. Du kommer att lära dig teknikerna bakom de nya trenderna med att skapa webbplatser som har
+            <strong>användargenererat</strong> innehåll, exempelvis Wikipedia.</p>
+        <p>Du får på kort tid kunskaper och lär dig arbeta med <strong>moderna ramverk</strong> och plattformar för
+            utveckling och användande samt programmeringsspråken:</p>
 
-<ul>
-    <li>PHP</li>
-<li>C#</li>
-<li>ASP med .NET</li>
-</ul>
-</div>
-<p>Du får också skapa och konsumera <strong>webbtjänster</strong> samt lära dig att utveckla med webbaserade innehållssystem (CMS).</p>
-</article>
-<div id="webcontainer">
-<picture>
-<source srcset="images/img001-1000.webp 1000w"
-type="image/webp"
-sizes="100vw"
-media="min-width: 600px">
+        <div id="programming-list">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node</li>
+            </ul>
 
-<source srcset="images/img001-1000.jpg 1000w"
-sizes="100vw"
-media="(min-width: 600px)">
+            <ul>
+                <li>PHP</li>
+                <li>C#</li>
+                <li>ASP med .NET</li>
+            </ul>
+        </div>
+        <p>Du får också skapa och konsumera <strong>webbtjänster</strong> samt lära dig att utveckla med webbaserade
+            innehållssystem (CMS).</p>
+    </article>
+    <div id="webcontainer">
+        <picture>
+            <source srcset="images/img001-1000.webp 1000w" type="image/webp" sizes="100vw" media="(min-width: 600px)">
 
-<source srcset="images/img001-small-400.webp 400w,
-images/img001-small-600.webp 600w"
-type="image/webp"
-sizes="100vw">
+            <source srcset="images/img001-1000.jpg 1000w" sizes="100vw" media="(min-width: 600px)">
 
-    <img id="happy-compute" 
-    src="images/img001-small-400.jpg"
-    srcset="images/img001-small-400.jpg 400w,
-    images/img001-small-600.jpg 600w"
-    sizes="100vw"
-    width="400"
-    height="229" 
-    alt="två personer som ler med datorer framför sig">
-</picture>
+            <source srcset="images/img001-small-400.webp 400w,
+images/img001-small-600.webp 600w" type="image/webp" sizes="100vw">
 
-<article class="dark-article" id="usability-article">
-    <h2>Webbanvändbarhet</h2>
-    <p>Under utbildningen får du lära dig viktiga delar inom webbanvändbarhet som stöd till den gedigna <span class="bold-text">teknikkunskap</span> du får för att utveckla och administrera framtidens webbplatser och funktionalitet.
-    </p><p>
-Det kommer att bli allt viktigare inom webbutvecklingen att kunna ta hänsyn till flera olika <strong><span class="bold-text">accesstekniker</span></strong> genom både fasta och mobila bredbandsuppkopplingar.
-</p><p id="last-dark-p">
-En trend är också att fler kombinerar och integrerar flera olika former av teknik och funktionalitet på webbplatsen.</p>
-</p></article>
-</div>
+            <img id="happy-compute" src="images/img001-small-400.jpg" srcset="images/img001-small-400.jpg 400w,
+    images/img001-small-600.jpg 600w" sizes="100vw" width="400" height="229"
+                alt="två personer som ler med datorer framför sig">
+        </picture>
 
-<article class="info-article" id="distance-header">
-    <h2>Distansutbildning</h2>
-    <p>Utbildningen ges helt på distans <strong>utan planerade sammankomster</strong> på campus. Studietakten är på heltid så du måste räkna med att lägga ned minst <strong>40 timmar</strong> i veckan på dina studier. 
-</p><p>
-Föreläsningarna som du tar del av sker på dagtid, men det finns även möjlighet att se inspelade föreläsningar i efterhand.
-    </p>
-</article>
+        <article class="dark-article" id="usability-article">
+            <h2>Webbanvändbarhet</h2>
+            <p>Under utbildningen får du lära dig viktiga delar inom webbanvändbarhet som stöd till den gedigna <span
+                    class="bold-text">teknikkunskap</span> du får för att utveckla och administrera framtidens
+                webbplatser och funktionalitet.
+            </p>
+            <p>
+                Det kommer att bli allt viktigare inom webbutvecklingen att kunna ta hänsyn till flera olika
+                <strong><span class="bold-text">accesstekniker</span></strong> genom både fasta och mobila
+                bredbandsuppkopplingar.
+            </p>
+            <p class="last-dark-p">
+                En trend är också att fler kombinerar och integrerar flera olika former av teknik och funktionalitet på
+                webbplatsen.</p>
+        </article>
+    </div>
 
-<article class="info-article">
-    <h2>Projektkurser</h2>
-    <p>Flera av kurserna i utbildningen är projektkurser där du kommer att ingå i en grupp studenter med skilda kunskaper i <strong>modellering</strong> och <strong>implementering</strong>. 
-    </p><p>
-Dessa projekt lär dig att använda dina egna färdigheter och att kommunicera effektivt med de andra i utvecklingsarbetet, kunskaper som <strong>efterfrågas av arbetsgivarna</strong>.</p>
-</p></article>
+    <article class="info-article" id="distance-header">
+        <h2>Distansutbildning</h2>
+        <p>Utbildningen ges helt på distans <strong>utan planerade sammankomster</strong> på campus. Studietakten är på
+            heltid så du måste räkna med att lägga ned minst <strong>40 timmar</strong> i veckan på dina studier.
+        </p>
+        <p>
+            Föreläsningarna som du tar del av sker på dagtid, men det finns även möjlighet att se inspelade
+            föreläsningar i efterhand.
+        </p>
+    </article>
 
-<div id="quote-container">
-    <picture>
-<source srcset="images/marie-small-400.webp 400w,
+    <article class="info-article">
+        <h2>Projektkurser</h2>
+        <p>Flera av kurserna i utbildningen är projektkurser där du kommer att ingå i en grupp studenter med skilda
+            kunskaper i <strong>modellering</strong> och <strong>implementering</strong>.
+        </p>
+        <p>
+            Dessa projekt lär dig att använda dina egna färdigheter och att kommunicera effektivt med de andra i
+            utvecklingsarbetet, kunskaper som <strong>efterfrågas av arbetsgivarna</strong>.</p>
+    </article>
+
+    <div id="quote-container">
+        <picture>
+            <source srcset="images/marie-small-400.webp 400w,
 images/marie-small-600.webp 600w,
-images/marie-1000.webp 1000w"
-type="image/webp"
-sizes="(min-width: 600px) 40vw, 100vw">
+images/marie-1000.webp 1000w" type="image/webp" sizes="(min-width: 600px) 40vw, 100vw">
 
-    <img id="Marie-bild" 
-    src="images/marie-small-400.jpg"
-    srcset="images/marie-small-400.jpg 400w,
+            <img id="Marie-bild" src="images/marie-small-400.jpg" srcset="images/marie-small-400.jpg 400w,
     images/marie-small-600.jpg 600w,
-    images/marie-1000.jpg 1000w"
-    sizes="(min-width: 600px) 30vw, 100vw"
-    width="400"
-    height="225" 
-    alt="Porträtt på Marie Francesca Michi">
-</picture>
-<div id="quote-div">
-    <h3>"Webbutveckling är den perfekta balansen mellan logik och kreativitet"</h3>
-    <p>- Marie Francesca Michi</p>
-</div></div>
+    images/marie-1000.jpg 1000w" sizes="(min-width: 600px) 30vw, 100vw" width="400" height="225"
+                alt="Porträtt på Marie Francesca Michi">
+        </picture>
+        <div id="quote-div">
+            <h3>"Webbutveckling är den perfekta balansen mellan logik och kreativitet"</h3>
+            <p>- Marie Francesca Michi</p>
+        </div>
+    </div>
 
-<section id="after-edu-box">
-<i class="fa-solid fa-briefcase fa-2xl"></i>
-<h2>Efter utbildningen</h2>
-<p>Det är stor efterfrågan på <strong>webb&shy;utvecklare</strong> och <strong>webb&shy;designers</strong>. Branschen bedöms växa med 20 procent de kommande åren och den ökande e-handeln bidrar kraftigt. Behovet av duktiga webb&shy;utvecklare är därför stort. 
-</p><p class="cursive-p">
-Denna utbildning ger dig de kunskaper som marknaden vill ha.</p>
-</section>
+    <section id="after-edu-box">
+        <i class="fa-solid fa-briefcase fa-2xl"></i>
+        <h2>Efter utbildningen</h2>
+        <p>Det är stor efterfrågan på <strong>webb&shy;utvecklare</strong> och <strong>webb&shy;designers</strong>.
+            Branschen bedöms växa med 20 procent de kommande åren och den ökande e-handeln bidrar kraftigt. Behovet av
+            duktiga webb&shy;utvecklare är därför stort.
+        </p>
+        <p class="cursive-p">
+            Denna utbildning ger dig de kunskaper som marknaden vill ha.</p>
+    </section>
 
 </main>
 <footer>
     <div id="footer-divider">
-<i class="fa-solid fa-envelope fa-xl"></i>
-<h2>Kontakt</h2></div>
-<p><a href="mailto:webbutveckling@miun.se">webbutveckling@miun.se</a></p>
+        <i class="fa-solid fa-envelope fa-xl"></i>
+        <h2>Kontakt</h2>
+    </div>
+    <p><a href="mailto:webbutveckling@miun.se">webbutveckling@miun.se</a></p>
 </footer>
-<body>
 
 </body>
 

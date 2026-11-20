@@ -68,7 +68,7 @@ nav ul {
     display: block;
 }
 
-#mainheader {
+#infoheader {
     font-size: 1.8rem;
     position: absolute;
     bottom: 30px;
@@ -195,7 +195,7 @@ nav ul {
     font-weight: 300; 
 }
 
-#last-dark-p {
+.last-dark-p {
     padding-bottom: 30px;
 }
 
@@ -402,7 +402,7 @@ nav {
     align-self: end;
 }
 
-#mainheader {
+#infoheader {
     left: 300px;
     padding: 20px 50px;
 }
