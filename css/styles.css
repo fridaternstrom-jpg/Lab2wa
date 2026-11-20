@@ -195,7 +195,11 @@ nav ul {
     font-weight: 300; 
 }
 
-.last-dark-p {
+#last-dark-p {
+    padding-bottom: 30px;
+}
+
+#dark-p-last {
     padding-bottom: 30px;
 }
 
@@ -219,10 +223,16 @@ nav ul {
     font-weight: 700;
 }
 
+#webcontainer {
+    background-color: var(--primaryaccent);
+    padding-top: 30px;
+}
+
 #happy-compute {
     width: 100%;
-    margin-top: 30px;
+    object-fit: contain;
     margin-bottom: 0;
+    display: block;
 }
 
 .bold-text {
@@ -360,19 +370,6 @@ footer p {
         line-height: 1.5;
     }
 
-    #webcontainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: var(--primaryaccent);
-    }
-
-    #happy-compute {
-object-fit: cover;
-height: 550px;
-object-position: right;
-margin: 0;
-    }
-
     #quote-container picture {
         max-width: 450px;
     }
@@ -407,9 +404,17 @@ nav {
     padding: 20px 50px;
 }
 
-#happy-compute {
-    height: 400px;
-}
+#webcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--primaryaccent);
+        padding-top: 0;
+    }
+
+    #webcontainer picture {
+       align-self: center;
+       margin-left: 10px;
+    }
 
 #container-wide {
     display: flex;
@@ -454,6 +459,7 @@ nav {
     #container-wide {
         gap: 80px;
     }
+
 #infobox h2 {
     padding-right: 30px;
 }
@@ -470,8 +476,13 @@ nav {
         border-radius: 10px;
     }
 
-#happy-compute {
-    height: 380px;
+#webcontainer {
+    background-color: var(--lightaccent);
+}
+
+#webcontainer picture {
+   padding: 0;
+   margin: 0;
 }
 
 #after-edu-box {
