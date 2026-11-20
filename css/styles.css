@@ -11,6 +11,8 @@ body {
     display: block;
 }
 
+/* Navigation och header */
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -58,6 +60,8 @@ nav ul {
     font-size: 1.2rem;
 }
 
+/* Hero med rubrik och brödsmulor */
+
 #herocontainer {
     position: relative;
 }
@@ -92,12 +96,16 @@ nav ul {
     color: gray;
 }
 
+/* Fristående citatet */
+
 #quote {
     margin: 36px 50px;
     font-style: italic;
     font-weight: normal;
     text-align: center;
 }
+
+/* Ingressen med första infon */
 
 #infobox {
     background-color: var(--lightaccent);
@@ -150,6 +158,8 @@ nav ul {
     text-decoration: underline;
 }
 
+/* Standard css för artiklarna med vit bakgrund och svart text */
+
 .info-article {
     margin: 30px 50px 30px;
 }
@@ -164,9 +174,15 @@ nav ul {
     margin-top: 5px;
 }
 
+.info-article h2 {
+    margin-bottom: 0;
+}
+
 .cursive-p {
     font-style: italic;
 }
+
+/* Gul låda för iögonfallande info */
 
 #exam-infobox {
     background-color: var(--brightaccent);
@@ -177,6 +193,8 @@ nav ul {
     flex-direction: column;
     align-items: center;
 }
+
+/* Standard css för mörka artiklar med vit text */
 
 .dark-article {
     background-color: var(--primaryaccent);
@@ -195,6 +213,8 @@ nav ul {
     font-weight: 300; 
 }
 
+/* Lite specificerande, så att lådorna ser bra ut */
+
 #last-dark-p {
     padding-bottom: 30px;
 }
@@ -203,9 +223,7 @@ nav ul {
     padding-bottom: 30px;
 }
 
-.info-article h2 {
-    margin-bottom: 0;
-}
+/* UL som tar upp olika programmeringsspråk */
 
 #programming-list {
     display: grid;
@@ -223,6 +241,8 @@ nav ul {
     font-weight: 700;
 }
 
+/* Mörkblå behållare med bild och text */
+
 #webcontainer {
     background-color: var(--primaryaccent);
     padding-top: 30px;
@@ -235,9 +255,8 @@ nav ul {
     display: block;
 }
 
-.bold-text {
-    font-weight: 700;
-}
+/* Standard för picture-elementen */
+
 picture {
     display: block;
     margin-bottom: 0;
@@ -246,9 +265,18 @@ picture {
     line-height: 0;
 }
 
+/* Accentuerar den vita, tunnare texten så att den blir lika framhöjd som den vita med <strong> */
+
+.bold-text {
+    font-weight: 700;
+}
+
+/* En ljus artikel som behöver mer utrymme */
 #distance-article {
     margin-top: 20px;
 }
+
+/* Citat med bild */
 
 #quote-container {
         display: flex;
@@ -283,6 +311,8 @@ picture {
     align-self: end;
 }
 
+/* Gul låda med info */
+
 #after-edu-box {
     background-color: var(--brightaccent);
     margin: 60px 40px 60px;
@@ -300,6 +330,8 @@ picture {
 #after-edu-box p {
     margin-top: 0;
 }
+
+/* Footer för syns skull */
 
 footer {
     border-top: solid gray 0.5px;
@@ -326,7 +358,11 @@ footer p {
     margin-top: 0;
 }
 
+/* Nedan följer media-queries */
+
 @media (min-width: 460px) {
+
+    /* Klumpar ihop citat och infolåda i toppen */
     #infobox-container {
         display: flex;
         flex-direction: column;
@@ -339,6 +375,8 @@ footer p {
     #infobox {
         padding-right: 60px;
     }
+
+/* Klumpar ihop gul infolåda med blå artikel i toppen */
 
     #exam-container {
         display: flex;
@@ -357,6 +395,7 @@ footer p {
         width: 50%;
     }
 
+    /* Sätter citat och infolåda tillsammans, bredvid varandra */
     #infobox-container {
         flex-direction: row-reverse;
     }
@@ -369,6 +408,8 @@ footer p {
         margin: 0;
         line-height: 1.5;
     }
+
+/* Fäster bredden på citatbilden */
 
     #quote-container picture {
         max-width: 450px;
@@ -386,6 +427,7 @@ footer p {
 
 @media (min-width: 800px) {
 
+    /* Puttar ner ikonerna lite */
 nav {
     align-self: end;
     margin-bottom: 10px;
@@ -399,11 +441,13 @@ nav {
     align-self: end;
 }
 
+/* Flyttar på lådan med rubrik i herobilden */
 #infoheader {
     left: 300px;
     padding: 20px 50px;
 }
 
+/* Stylar två klumpade element så det ser bättre ut */
 #webcontainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -411,9 +455,10 @@ nav {
         padding-top: 0;
     }
 
-    #webcontainer picture {
-       align-self: center;
-       margin-left: 10px;
+    #picture-container {
+        align-self: start;
+        margin-top: 36px;
+        margin-left: 20px;
     }
 
 #container-wide {
@@ -431,7 +476,8 @@ nav {
 
 @media (min-width: 1000px) {
     #quote {
-        padding: 60px;
+        padding: 60px; 
+        margin-right: 5%;
     }
 
     #infobox {
@@ -439,18 +485,49 @@ nav {
         margin-left: 15%;
     }
 
-#quote { 
-    margin-right: 5%;
-}
-
+    /* Ökar storleken på fonten */
 .info-article h1 {
     font-size: 2.4rem;
+}
+
+.info-article h2 {
+    font-size: 2.2rem;
 }
 
 .info-article p {
     font-size: 1.3rem;
 }
 
+#programming-list li {
+    font-size: 1.3rem;
+}
+.dark-article h2 {
+    font-size: 2rem;
+}
+
+.dark-article p {
+    font-size: 1.3rem;
+}
+
+#exam-infobox p {
+    font-size: 1.3rem;
+}
+
+#quote-div h3 {
+font-size: 2.1rem;
+}
+
+#quote-div p {
+    font-size: 1.2rem;
+}
+
+#after-edu-box h2 {
+    font-size: 2rem;
+}
+
+#after-edu-box p {
+    font-size: 1.3rem;
+}
     .info-article {
         margin-left: 20%;
         margin-right: 20%;
@@ -458,6 +535,8 @@ nav {
 
     #container-wide {
         gap: 80px;
+        display: flex;
+        justify-content: center;
     }
 
 #infobox h2 {
@@ -469,27 +548,51 @@ nav {
 
     #exam-infobox {
         border-radius: 10px;
+        max-width: 300px;
     }
 
     #first-dark {
         margin-left: 15%;
         border-radius: 10px;
+        max-width: 500px;
     }
 
 #webcontainer {
     background-color: var(--lightaccent);
 }
 
-#webcontainer picture {
-   padding: 0;
-   margin: 0;
+#picture-container {
+    align-self: center;
+    margin: 0;
 }
 
 #after-edu-box {
   margin-left: 25%;
   margin-right: 25%;
 }
+}
 
+@media (min-width: 1200px) {
+    
+#wide-screen {
+    display: flex;
+    justify-content: center;
+}
 
+#webcontainer {
+    background-color: var(--primaryaccent);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 820px;
+}
+
+#picture-container {
+    margin-top: 20px;
+}
+
+#usability-article {
+    border-radius: 10px;
+}
 }
 
