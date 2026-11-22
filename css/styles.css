@@ -80,7 +80,6 @@ nav ul {
     background-color: var(--primaryaccent);
     color: white;
     padding: 10px 30px;
-    
 }
 
 #breadcrumbs {
@@ -278,7 +277,7 @@ picture {
 
 /* Citat med bild */
 
-#quote-container {
+#quote-box {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -411,7 +410,7 @@ footer p {
 
 /* Fäster bredden på citatbilden */
 
-    #quote-container picture {
+    #quote-box picture {
         max-width: 450px;
     }
 
@@ -528,11 +527,14 @@ font-size: 2.1rem;
 #after-edu-box p {
     font-size: 1.3rem;
 }
+
+/* lägger en artikel i mitten */
     .info-article {
         margin-left: 20%;
         margin-right: 20%;
     }
 
+    /* centrerar en massa olika boxar och element */
     #container-wide {
         gap: 80px;
         display: flex;
@@ -573,7 +575,61 @@ font-size: 2.1rem;
 }
 
 @media (min-width: 1200px) {
-    
+ /* minskar respektive ökar storlek på elementen i headern */
+    .link-area {
+        padding: 0px 25px;
+    }
+
+    .link-area p {
+font-size: 1.4rem;
+    }
+
+#logotyp {
+    width: 30%;
+}
+
+#search-area p {
+    font-size: 1.4rem;
+}
+
+/* eftersom bilden är för liten för att vara header vid stor skärm */
+
+#herocontainer {
+    background-color: var(--lightaccent);
+}
+
+#herocontainer picture {
+    display: flex;
+    justify-content: end;
+}
+
+#heroimg {
+    max-width: 1000px;
+}
+
+#infoheader {
+    bottom: 30%;
+    left: 40px;
+    padding: 20px 40px;
+    font-size: 2.2rem;
+}
+
+
+/* Positionerar för att passa stor skärm */
+#infobox-container {
+    justify-content: center;
+    gap: 50px;
+}
+
+#quote-container {
+    max-width: 600px;
+    margin-right: 50px;
+}
+
+#infobox {
+    max-width: 600px;
+}
+
 #wide-screen {
     display: flex;
     justify-content: center;
