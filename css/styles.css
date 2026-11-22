@@ -160,7 +160,10 @@ nav ul {
 /* Standard css för artiklarna med vit bakgrund och svart text */
 
 .info-article {
-    margin: 30px 50px 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .info-article h1 {
@@ -204,12 +207,15 @@ nav ul {
     padding: 30px 50px 0px;
     margin-bottom: 0;
     margin-top: 0;
+    margin-left: 5%;
 }
 
 .dark-article p {
     margin-top: 5px;
     padding: 0px 50px 0px;
-    font-weight: 300; 
+    font-weight: 300;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* Lite specificerande, så att lådorna ser bra ut */
@@ -446,6 +452,11 @@ nav {
     padding: 20px 50px;
 }
 
+.info-article {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 /* Stylar två klumpade element så det ser bättre ut */
 #webcontainer {
         display: grid;
@@ -465,10 +476,13 @@ nav {
     flex-direction: row-reverse;
 }
 
+#exam-container {
+    }
+
 #exam-infobox {
     margin: 0;
     border-radius: 0;
-    padding: 30px 50px 20px;
+    padding: 30px 50px 30px;
 }
 
 }
@@ -483,6 +497,12 @@ nav {
         padding-right: 140px;
         margin-left: 15%;
     }
+
+/* Håller radlängderna korta */
+.info-article {
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
     /* Ökar storleken på fonten */
 .info-article h1 {
@@ -518,6 +538,17 @@ font-size: 2.1rem;
 
 #quote-div p {
     font-size: 1.2rem;
+}
+
+#after-edu-container {
+    display: flex;
+    justify-content: center;
+}
+
+#after-edu-box {
+    margin-right: 20%;
+    margin-left: 20%;
+    max-width: 600px;
 }
 
 #after-edu-box h2 {
@@ -614,6 +645,11 @@ font-size: 1.4rem;
     font-size: 2.2rem;
 }
 
+/* Anpassar radlängderna */
+.info-article {
+    margin-left: 30%;
+    margin-right: 30%;
+}
 
 /* Positionerar för att passa stor skärm */
 #infobox-container {
