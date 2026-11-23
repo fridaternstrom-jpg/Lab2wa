@@ -60,6 +60,13 @@ nav ul {
     font-size: 1.2rem;
 }
 
+main p {
+ font-size: 1.1rem;
+}
+
+main h2 {
+font-size: 1.8rem;
+}
 /* Hero med rubrik och brödsmulor */
 
 #herocontainer {
@@ -170,6 +177,7 @@ nav ul {
     margin-bottom: 0;
     padding-top: 30px;
     padding-bottom: 0;
+    font-size: 2.1rem;
 }
 
 .info-article p {
@@ -244,6 +252,7 @@ nav ul {
 
 #programming-list li {
     font-weight: 700;
+    font-size: 1.1rem;
 }
 
 /* Mörkblå behållare med bild och text */
@@ -476,8 +485,12 @@ nav {
     flex-direction: row-reverse;
 }
 
+#exam-container {
+    background-color: var(--brightaccent);
+}
+
 #exam-infobox {
-    margin: 0;
+    margin: 0 auto;
     border-radius: 0;
     padding: 30px 50px 30px;
 }
@@ -564,7 +577,7 @@ font-size: 2.1rem;
 
     /* centrerar en massa olika boxar och element */
     #container-wide {
-        gap: 80px;
+        gap: 60px;
         display: flex;
         justify-content: center;
     }
@@ -573,7 +586,8 @@ font-size: 2.1rem;
     padding-right: 30px;
 }
     #exam-container {
-        margin-right: 15%;
+        margin-right: 15%; 
+        background-color: white;
     }
 
     #exam-infobox {
@@ -585,6 +599,13 @@ font-size: 2.1rem;
         margin-left: 15%;
         border-radius: 10px;
         max-width: 500px;
+    }
+
+    #first-dark h2 {
+        padding: 30px 10px 0px;
+    }
+    #first-dark p {
+        padding: 0 10px;
     }
 
 #webcontainer {
@@ -657,6 +678,11 @@ font-size: 1.4rem;
 #quote-container {
     max-width: 600px;
     margin-right: 50px;
+    margin-top: 60px;
+}
+
+#quote-container h2 {
+    font-size: 2.3rem;
 }
 
 #infobox {
